@@ -38,5 +38,11 @@ if __name__ == "__main__":
 
 for i in range(100):
     list_.append(next(pk1))
+    
+    
+for dict_ in list_:
+    for i in dict_:
+        with open(output_file, "w") as file:
+            file.write(i)
 
 print(list_)
